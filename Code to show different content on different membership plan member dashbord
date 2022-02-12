@@ -1,0 +1,16 @@
+<?php
+$user_dataa = getUser($_COOKIE['userid'],$w);
+//print_r($user_dataa['subscription_id']);
+
+if($user_dataa['subscription_id'] == '1') {
+	//echo '<h3>This is Gold plan</h3>';
+}
+else 
+if($user_dataa['subscription_id'] == '2') { ?>
+	[widget=Silver plan Popup]
+<?php }
+else 
+if($user_dataa['subscription_id'] == '3') { ?>
+	[widget=Bronze Popup]
+<?php }
+?>
